@@ -1,0 +1,33 @@
+const BlogArticle = 
+
+{title: "first post",
+description: "hello world",
+tags: ["introduction"],
+fileUpload: "alpaca.jpg",
+upvote: {
+  type: 5,
+  default: 0,
+},
+creator: "TO",
+createdAt: {
+  type: Date,
+  default: new Date(),
+},
+}
+
+/* original blog post object from api/blogs
+{
+title: String,
+description: String,
+tags: [String],
+fileUpload: String,
+upvote: {
+  type: Number,
+  default: 0,
+},
+creator: String,
+createdAt: {
+  type: Date,
+  default: new Date(),
+},
+});
