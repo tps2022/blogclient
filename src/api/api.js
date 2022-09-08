@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:6001/blogs";
+const url = "http://127.0.0.1:3000/blogs";
 
 export const fetchBlogPosts = () => axios.get(url);
 export const addNewBlogPost = (newBlog) => axios.post(url, newBlog);

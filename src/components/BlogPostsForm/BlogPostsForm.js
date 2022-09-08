@@ -72,7 +72,7 @@ const BlogPostsForm = ({ blogPostId, setBlogPostId }) => {
           label="📙 Blog Description"
           fullWidth
           multiline
-          rows={7}
+          // rows={7}
           value={blogInfo.description}
           onChange={(e) =>
             setBlogInfo({ ...blogInfo, description: e.target.value })
@@ -88,7 +88,7 @@ const BlogPostsForm = ({ blogPostId, setBlogPostId }) => {
             setBlogInfo({ ...blogInfo, creator: e.target.value })
           }
         />
-        <Typography>Tags (5 max seperated by comma)</Typography>
+        <Typography>Tags (5 max separated by comma)</Typography>
         <TextField
           name="tags"
           variant="outlined"

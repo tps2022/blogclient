@@ -1,4 +1,5 @@
 export default (posts = [], action) => {
+  
     switch (action.type) {
       case "GET_ALL_BLOG_POST":
         return action.payload;

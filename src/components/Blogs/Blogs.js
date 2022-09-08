@@ -9,10 +9,11 @@ const Blogs = ({ setBlogPostId }) => {
   const posts = useSelector((state) => state.posts);
   const classes = useStyles();
 
-  console.log("this is post", posts);
+  console.log("this should log when a post shows up post", posts);
 
   return !posts.length ? (
     <CircularProgress />
+
   ) : (
     <Grid
       className={classes.container}
@@ -26,7 +27,7 @@ const Blogs = ({ setBlogPostId }) => {
         </Grid>
       ))}
     </Grid>
-  );
+  ) : <BlogPosts />;
 };
 
 export default Blogs;
